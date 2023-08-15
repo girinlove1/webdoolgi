@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.bobo {
+    width: 100vw;
+    height: 80vh;
+    background-color: burlywood;
+    border: 3px dotted rgb(203, 227, 224);
+    
+    
+}
+
+.bobo svg{
+    width: 100%;
+    opacity: 0.5;
+}
+.bobo svg path{
+    fill: transparent;
+    stroke: olive;
+   stroke-width: 2;
+   stroke-dasharray: 4994;
+   stroke-dashoffset: -4994;
+   transition: 1s ease-in-out;
+}
+
+.bobo:hover svg path{
+    stroke-dashoffset: 0;
+    fill:beige
+}
+
+@media screen and (max-width: 900px) {
+/* and랑() 사이 빈칸 주의
+ 0~900사이까지는 어떤 구문 집어넣을 때 이게 위에 껄 덮어쓰게=우선순위 갖게 함*/
+
+ .bobo{
+    background: olive;
+ }
+}
+
+@media screen and (max-width: 800px) {
+  
+     .bobo{
+        background: rgb(80, 122, 152);
+     }
+    }

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/bto3byu.css");
+
+
+
+*  {
+    margin: 0px;
+    padding: 0px;
+		font: normal, normal, 100/1.5, "helvetica", serif;
+}
+
+
+ul, ol{
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+header {
+	width: 100%;
+	border-bottom: 3px dotted lightblue;
+	display: flex;
+	justify-content: space-between;
+	padding: 0vh 0vw;
+	padding-bottom: 45vh;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+h1 {
+    font-family: "roc-grotesk-extrawide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+
+}
+
+header #gnb {
+	display: flex;
+	
+}
+
+#gnb li {
+	/* margin: 0px 20px; */
+	
+}
+
+#gnb li a{
+	font: 16px/1 "Helvetica";
+	color: aliceblue;
+	letter-spacing: -1px;
+	background: rgba(68, 66, 66, 0.491)
+	
+}
+
+#gnb li a:hover{
+	background: transparent;
+	transition: .3s;
+}
+
+
+.sns{
+	display: flex;
+}
+
+.sns li{
+	margin: 0px 10px;
+}
+
+.sns li a {
+	font-size: 16px;
+	color: aliceblue;
+}
+
+.btnmenu {
+display: none;
+font-size: 16px;
+color: aliceblue;
+padding-right: 2vw;
+}
+
+figure {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow:hidden;
+	z-index: 1;
+}
+
+figure video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.txt {
+	position: absolute;
+	left: 6vw;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.txt p{
+	font: normal 6vw/1 "roc-grotesk-extrawide";
+	color: aliceblue;
+	letter-spacing: -1vw;
+}
+
+strong {
+	font: 16px/1 "Helvetica";
+	color: aliceblue;
+	letter-spacing: -1px;
+}
+
+.txt ul{
+	display: flex;
+	margin-top: 20px;
+}
+
+.txt ul li{
+	margin-right: 20px;
+}
+
+li i {
+	font: 16px/1 "Helvetica";
+	color: aliceblue;
+	letter-spacing: 0px;
+	margin-right: 20px;
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font: 12px/1 "Helvetica";
+	color: aliceblue;
+	letter-spacing: -1px;
+	text-align: center;
+	z-index: 2;
+}
+
+/* mobile ver */
+@media screen and (max-width: 1023px){
+	header #gnb{
+		display: none;
+	}
+	header .sns {
+		display: none;
+	}
+	header .btnmenu{
+		display: block;
+	}
+
+	figure .txt p {
+		font-size: 8vw;
+	}
+}

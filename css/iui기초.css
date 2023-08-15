@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+section {
+    width: 200px;
+    height: 200px;
+    border: 2px dotted salmon;
+    float: left;
+    margin: 50px;
+    perspective: 400px;
+    position: absolute;
+    right: 10px;
+    /* 3d rotate 확인하려면 부모요소에 퍼스펙티브 적용해야. 가까이서 볼 수록 물체 왜곡되는 것 반영. 수치 커질수록 적은 왜곡 */
+    /* animation-name: bababa;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s; */
+
+    animation: bababa 2s linear 0s infinite;
+}
+
+article {
+width: 100%;
+height: 100%;
+background-color: burlywood;
+opacity: 0.3;
+/* transition-property: transform background-color;
+transition-duration: 0.3s;
+transition-delay: 0s;
+transition-timing-function: cubic-bezier(1,1.14,.3,1.22); */
+transition: all 0.3s cubic-bezier(1,1.14,.3,1.22) 0s;
+/* 트랜지션 적용할 부분-지속시간-속도-딜레이. 딜레이는 생략 가능.  속도는 ease-in-out이나 리니어나 이런 식으로 해도 됨; 걍 0.3s만 써도 진행된다
+ */
+
+ /* transform: scale(1.5);  */
+/* transform: skewX(5deg);  */
+/* transform: translateX(10%);  */
+    /* 픽셀/퍼센트 다 가능. 퍼센트는 자기 크기 기준 */
+transform: rotate(5deg); 
+}
+
+section:hover article {
+    transform: rotateY(170deg);
+    background-color: gold;
+   
+
+}
+
+section:hover {
+    animation-play-state: paused;
+    
+}
+
+@keyframes bababa {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bobo {
+    width: 80vw;
+    height: 80vh;
+    background-color: olive;
+    border: 30px dotted gray;
+    box-sizing: content-box;
+}
+
+.bobo svg{
+    width: 100%;
+}
+.bobo svg path{
+    fill: burlywood;
+    /* transparent */
+    stroke: blue;
+    transition: 1s;
+}
+
+.bobo:hover svg path {
+    fill:transparent;
+}

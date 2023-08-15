@@ -1,0 +1,67 @@
+
+a {
+	text-decoration: none;
+}
+
+
+h1 {
+    color:darkkhaki
+}
+
+body {
+    color:olive
+}
+
+div > a{
+    border: 1px dotted brown;
+}
+/* solid=실선. 구분자{속성명:속성값} 이런 순서로 정한 것임 */
+
+li:nth-of-type(1){
+    border:1px dotted olive;
+}
+
+ul li:nth-of-type(even){
+    border:1px dotted burlywood;
+}
+
+input[type="text"]{
+    color:slategrey;
+    border: 1px dotted brown;
+}
+
+p.lorem5{
+    border:1px dotted burlywood;
+}
+
+p.lorem3{
+    border: 1px dotted blueviolet;
+}
+
+#red{
+    color:darkorange;
+}
+
+#blue{
+    color:hotpink;
+}
+
+.jgn{
+    border:1px dotted darkgoldenrod;
+}
+
+.jgn:hover {
+    border:1px solid darkgoldenrod;
+}
+
+.jgn:active{
+    color:black;
+}
+
+.jgn:before{
+    content: "내용은 무입니다";
+}
+
+.jgn:after{
+    content: "내내치킨";
+}

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/.box{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+}
+
+/* * {
+    margin: 5px;
+    padding:5px;
+} */
+
+/ul,ol{
+    list-style: none;
+}
+
+a{
+   text-decoration: dotted;
+}
+
+
+
+.virtual:hover {
+/* content: "virtual"; */
+background-color: burlywood;
+display: block;
+width: 400px;
+height: 400px;
+margin: 10px;
+
+}
+
+.position {
+    width: 800px;
+    border: 10px dotted burlywood;
+    margin: 100px auto;
+}
+.position::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.b1 {
+    width: 400px;
+    height: 400px;
+    background-color: olive;
+    float: left;
+}
+
+.b2 {
+    width: 400px;
+    height: 400px;
+    background-color: salmon;
+    float: left;
+    position: relative;
+    /* position: relative; */
+}
+
+p.b22{
+width: 100px;
+height: 100px;
+background-color: blanchedalmond;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+color: olive;
+
+/* position: absolute; */
+position: fixed;
+bottom: 5px;
+left: 5px;
+opacity: 0.8;
+box-shadow: inset 0px 0px 10px rgba(168, 213, 165, 0.744);
+box-shadow: 0px 0px 10px rgba(168, 213, 165, 0.744);
+
+/* border-radius: 100%; */
+border-radius: 50px;
+border-top-right-radius: 30%;
+}
+
+.b3{
+    width: 800px;
+    height: 20px;
+    background-color: indianred;
+    float: left;
+}
+/* 
+body{
+    height: 30000Px;
+} */
+
+.uggro1{
+    width: 400px;
+    height: 400px;
+    background-color: grey;
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+    z-index: 2;
+    opacity: 0.5;
+    
+
+}
+.uggro2{
+    width: 400px;
+    height: 400px;
+    background-color: lightsalmon;
+
+    position: absolute;
+    top: 1200px;
+    left: 200px;
+    z-index: 1;
+    
+}
+
+html{
+    font-size: 16px;
+    /* 이게 기본 설정 크기. H1등은 안바뀜 */
+
+
+}
+
+h1{
+    font-size: 0.5rem;
+    /*위에 지정한 기본 크기=rem이 된듯? 이제 폰트 크기 다 rem으로 설정하면 기본 크기만 조정해도 모두 같은 비율로 바ㅜ낌 */
+}
+
+.view{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, burlywood, olive, salmon);
+    /* background: linear-gradient(135deg, burlywood, olive); */
+    /* background: radial-gradient(burlywood,olive); */
+    
+}
+p.viewggro {
+    font-size: 10vmin;
+    color: gold;
+    text-align: center;
+}
+
+.object{
+    width: 50vw;
+    height: 50vh;
+    border: 1px dotted olive;
+    margin: 100px auto;
+    
+
+}
+
+.object img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-fit: cover;
+    filter: blur(1px);
+    filter: brightness(.8);
+    /* 0~10정도 줄 수 있음, 1은 기본 */
+    filter: contrast(.6);
+    filter: grayscale(.4);
+    filter: saturate(.5); 
+    /* 선명도? 그레이는 원래 색 이상으로 못 쨍해짐 */
+filter: hue-rotate(200deg);
+filter: invert(1);
+/* 여긴 1이 완전반전, 0이 원본 */
+filter: sepia(.4);
+}
+
+
+p.hungry{
+    font-size: 10vmax;
+    color: rgb(160, 211, 123);
+   text-shadow: 0px 0px 20px rgba(168, 213, 165, 0.744);
+}
+

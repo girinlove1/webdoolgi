@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body {
+    background: rgb(147, 155, 80);
+    text-align: center;
+    color: olive;
+
+}
+
+/*여기까지 css 초기화 */
+
+.wrap{
+    width: 50vmin;
+    padding: 50px;
+    padding-bottom: 20px;
+    background: aliceblue;
+    opacity: 80%;
+    justify-content: center;
+    align-items: center;
+    /* 여기서부터 정중앙 배치 공식 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* 자기 자신 반 만큼 옆으로 가게 해 정 중앙에 배치함 */
+
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(239, 148, 74, 0.5);
+}
+
+
+
+article:hover{
+    width: 30vmin;
+    transition: all .3s ease-in-out;
+}
+
+.wrap .menu {
+   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+     
+ padding: 2px;
+}
+
+.pause {
+    width: 25vmin;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+   
+     justify-content: space-evenly;
+}
+.wrap .menu::after {
+
+
+a {
+    font-size: 20px;
+    color: rgb(74, 105, 47);
+}
+
+
+}
+
+a:visited{
+    color:rgb(190, 191, 113);
+    
+    text-decoration: none;
+}
+
+.profilee{
+   width: 25vmin;
+    padding: 1%;
+   
+    
+}
+
+.profilee img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10%;
+    /* box-shadow: 0px 0px 10px rgba(161, 191, 133, 0.608); */
+    padding: 10px;
+}
+
+
+h1 {
+    font: normal 8px/2 "Nanum Gothic";
+}
+h2{
+    font: bold italic 12px/2 "nanum gothic";
+}
+p.df{
+    font: normal 4px/2 "arial";
+ 
+}
+
+
+.contact li{
+   text-shadow: 1px 1px 3px rgba(172, 216, 123, 0.5);
+}
+
+.others {
+    text-align: center;
+    font-size: 3px;
+    padding-top: 8px;
+   
+}
+
+.others a{
+    display: inline-block;
+    width:  10px;
+    height: 10px;
+
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(119, 88, 63, 0.5);
+    opacity: .4;
+
+}
+.others a.on {
+    opacity: 1;
+}
+
+.others a:nth-of-type(1) {
+    background: rgb(197, 219, 145);
+}
+.others a:nth-of-type(2) {
+    background: rgb(198, 131, 131);
+}
+.others a:nth-of-type(3) {
+    background: rgb(131, 152, 198);
+}
+.others a:nth-of-type(4) {
+    background: rgb(241, 231, 154);
+}
+
+/* mem2 */
+.mem1 {
+    background: rgb(147, 155, 80);
+    color: olive;
+}
+
+.mem1 a {
+    font-size: 20px;
+    color: rgb(74, 105, 47);
+}
+
+.mem1 a:visited{
+    color:rgb(190, 191, 113);
+    
+    text-decoration: none;
+}
+.mem1 .contact li{
+    text-shadow: 1px 1px 3px rgba(172, 216, 123, 0.5);
+ }
+ 
+
+ .mem2 {
+    background: rgb(213, 142, 142);
+    color: rgb(203, 140, 140);
+}
+
+.mem2 a {
+    font-size: 20px;
+    color: rgb(181, 123, 123);
+}
+
+.mem2 a:visited{
+    color:rgb(255, 179, 179);
+    
+    text-decoration: none;
+}
+.mem2 .contact li{
+    text-shadow: 1px 1px 3px rgba(255, 148, 148, 0.5);
+ }

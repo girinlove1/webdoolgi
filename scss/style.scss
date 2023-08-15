@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import "reset";
+@import "mixin";
+
+$bodybg: #00806f;
+$ebg: (olive, #efd4a1, aqua, gold);
+$bgitem: #deb887;
+
+
+body {
+    background: $bodybg;
+    
+}
+
+.wrap{
+    width: 100%;
+    border: 2px dotted burlywood;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    perspective: 600px;
+
+    .item{
+        width: 300px;
+        padding: 30px;
+        background: $bgitem;
+        margin: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba($color: #626d43, $alpha: 0.5);
+        transition: .5s;
+        transform: translateY(-100px) rotateY(180deg);
+        opacity: 0;
+       
+    
+        h2{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            @if $bgitem == burlywood{color: olive}
+            @else{color: aliceblue;}
+        }
+
+        p{
+            font: normal 10px/1.5 helvetiva;
+            margin-bottom: 20px;
+            color: olive;
+        }
+
+        // @for $i from 1 through 4{
+        //     &:nth-of-type(#{$i}){
+        //         transition-delay: 0.1s*$i;
+        //     }
+        // }
+
+      
+        @each $el in $ebg {
+            $num: index($ebg, $el);
+            &:nth-of-type(#{$num}){
+                transition-delay: 0.1s * $num;
+                a{
+                    @include button($bg:$el);
+                }
+            }
+        }
+
+   
+
+        &:hover {
+            background: #111;
+            p, h2, a{
+                color: aliceblue;
+                transition: 0.2s;
+            }
+        
+            &:nth-of-type(4) a {
+                @include button(130px);
+                transition: .1s;
+            }
+        }
+    }
+
+    &:hover{
+        .item {
+    transform: translateY(0px) rotateY(0deg);
+    opacity: 1;
+
+    
+        
+
+    }
+}
+
+
+}
+
+
+
+
+
+

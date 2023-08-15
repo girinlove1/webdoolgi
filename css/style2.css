@@ -1,0 +1,89 @@
+@charset "UTF-8";
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+</style>
+
+h1{
+    color: darksalmon;
+}
+
+body{
+    color: burlywood;
+    /* width:80%; */
+}
+
+div{
+    border: dotted bisque;
+}
+
+P strong {border: dotted olive;}
+
+a{
+    color:brown;
+    border: dotted olive;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    background-color: aliceblue;
+    background-image: url(../img/1922.4465\ -\ Poppy\ Field\ \(Giverny\)\ 복사본.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.babo{
+    /* font-weight: bold;
+    font-style: italic;
+    font-size: small;
+    line-height: 150%;
+    font-family:'Pretendard'; */
+    font: bold italic 10px/150% "pretendard";
+    text-align: justify;
+
+    border: 10px dotted burlywood;
+
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    margin: 0px auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    box-sizing:border-box;
+
+
+}
+
+.michim{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 233, 208, 0.5);
+    text-align: center;
+    margin: auto;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    overflow: auto;
+    margin-bottom: 100px;
+}
+h1{
+    font-size: 20px;
+    font-family: 'Noto Serif KR', serif;
+
+}
+
+h2{
+    font-size: 8px;
+    font-family:"pretendard";
+}
+
+.fa-wand-magic-sparkles{
+    font-size: 20px;
+    color:olive
+}
+
+ul li {
+width: 100%;
+height: 50px;
+border: 1px dotted #deb887;
+}
+ul li:nth-of-type(1){
+    background-color: #000;
+}
