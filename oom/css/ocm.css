@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font: normal, normal, 100/1.5, "helvetica", serif;
+}
+* ul, * ol {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(to bottom, burlywood, olive);
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 300px;
+  position: fixed;
+  display: flex;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-40%);
+}
+header .view {
+  display: flex;
+  text-align: left;
+  transition: 0.7s;
+  letter-spacing: -10px;
+}
+header .view p.viewggro {
+  display: flex;
+  font: normal normal 10vmin/1 "Helvetica";
+  color: gold;
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+  margin-top: -10px;
+}
+header .view .oomsub {
+  font: normal normal 3vmin/1 "Helvetica";
+  color: gold;
+  opacity: 0;
+}
+header .view:hover {
+  letter-spacing: -2px;
+}
+header .view:hover .oomsub {
+  opacity: 0.8;
+}
+
+figure {
+  width: 30vw;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  top: 40vh;
+  left: 40%;
+  transform: translateX(-20%);
+  padding: 100px;
+  transition: 0.3s;
+  color: burlywood;
+}
+figure .topline {
+  font: bold normal 20px/1.5 "Helvetica";
+}
+figure .midlane {
+  margin-left: 100px;
+  font: normal normal 10px/1.5 "Helvetica";
+  opacity: 0;
+  transition: 0.3s;
+}
+figure:hover .topline {
+  transform: skew(10deg);
+}
+figure:hover .midlane {
+  opacity: 1;
+  translate: 0px 10px;
+}
+
+/*# sourceMappingURL=ocm.css.map */

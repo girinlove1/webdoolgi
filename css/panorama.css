@@ -1,0 +1,385 @@
+@import url("https://use.typekit.net/bto3byu.css");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+body {
+  background-color: #222;
+  font: 17px/1.4 "Helvetica";
+  letter-spacing: -1px;
+  color: #ddd;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 1200px;
+  position: relative;
+}
+.wrap > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+.wrap #wonton {
+  width: 600px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -400px;
+  animation: wonton infinite linear 30s;
+  transform-style: preserve-3d;
+}
+.wrap #wonton article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  backface-visibility: hidden;
+}
+.wrap #wonton article h1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 30px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.wrap #wonton article:hover h1 {
+  top: -60px;
+  opacity: 1;
+}
+.wrap #wonton article .inner {
+  width: 100%;
+  height: 100%;
+}
+.wrap #wonton article .inner > div {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted rgb(134, 134, 134);
+  box-sizing: border-box;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0);
+  transition: 0.3s ease-in-out;
+  opacity: 0.4;
+}
+.wrap #wonton article .inner > div:hover {
+  opacity: 0.7;
+  background-color: rgb(128, 128, 128);
+  transform: scale(1.03);
+}
+.wrap #wonton article.face1 {
+  transform: rotateY(0deg) translateZ(-764px);
+}
+.wrap #wonton article.face1 .inner div {
+  width: 290px;
+  height: 254px;
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.wrap #wonton article.face1 .inner div i {
+  color: #ddd;
+  font-size: 60px;
+  transition: 0.3s;
+}
+.wrap #wonton article.face1 .inner div h2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.wrap #wonton article.face1 .inner div:hover {
+  text-shadow: 0px 0px 10px #ddd;
+}
+.wrap #wonton article.face1 .inner div:hover i {
+  font-size: 80px;
+}
+.wrap #wonton article.face1 .inner div:nth-of-type(odd) {
+  margin-right: 20px;
+}
+.wrap #wonton article.face2 {
+  transform: rotateY(45deg) translateZ(-764px);
+}
+.wrap #wonton article.face2 .inner {
+  transition: 0.5s;
+}
+.wrap #wonton article.face2 .inner h2 {
+  font: bold normal 20px/1.5 "roc-grotesk-extrawide";
+}
+.wrap #wonton article.face2 .inner h3 {
+  font: normal italic 10px/1.5 "Helvetica";
+  margin-bottom: 20px;
+  letter-spacing: 0px;
+}
+.wrap #wonton article.face2 .inner h4 {
+  font: normal normal 15px/1.5 "Helvetica";
+}
+.wrap #wonton article.face2 .inner div img {
+  width: 100%;
+  margin-top: 20px;
+}
+.wrap #wonton article.face2 .inner div:hover h2, .wrap #wonton article.face2 .inner div:hover h3 {
+  text-shadow: 0px 0px 10px #ddd;
+}
+.wrap #wonton article.face3 {
+  transform: rotateY(90deg) translateZ(-764px);
+}
+.wrap #wonton article.face3 .nono {
+  width: 100%;
+  height: 253px;
+  margin-bottom: 20px;
+  background-color: #888;
+}
+.wrap #wonton article.face3 .nono::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap #wonton article.face3 .nono .person {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px dotted aliceblue;
+  float: left;
+}
+.wrap #wonton article.face3 .nono .con {
+  width: 340px;
+  float: right;
+}
+.wrap #wonton article.face3 .nono .con h2 {
+  font-size: 20px;
+}
+.wrap #wonton article.face3 .nono .con p, .wrap #wonton article.face3 .nono .con span {
+  font-size: 10px;
+  margin-top: 10px;
+  font-family: "Helvetica";
+  letter-spacing: 0px;
+}
+.wrap #wonton article.face4 {
+  transform: rotateY(135deg) translateZ(-764px);
+}
+.wrap #wonton article.face4 .inner > div:nth-of-type(1) {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 10px;
+}
+.wrap #wonton article.face4 .inner > div:nth-of-type(1) video {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted olive;
+  object-fit: cover;
+}
+.wrap #wonton article.face4 .inner > div:nth-of-type(2) {
+  width: 100%;
+  height: 200px;
+}
+.wrap #wonton article.face4 .inner > div h2 {
+  font-size: 20px;
+}
+.wrap #wonton article.face4 .inner > div p {
+  margin-top: 10px;
+  font-family: "Helvetica";
+  font-size: 10px;
+  letter-spacing: 0px;
+}
+.wrap #wonton article.face5 {
+  transform: rotateY(180deg) translateZ(-764px);
+}
+.wrap #wonton article.face5 .inner > div .pic {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.wrap #wonton article.face5 .inner > div .pic video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+.wrap #wonton article.face5 .inner > div .ref {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  transition: 0.3s;
+}
+.wrap #wonton article.face5 .inner > div:hover .ref {
+  top: 0%;
+}
+.wrap #wonton article.face6 {
+  transform: rotateY(225deg) translateZ(-764px);
+}
+.wrap #wonton article.face6 .inner > div {
+  width: 100%;
+  height: 185px;
+  margin-bottom: 20px;
+}
+.wrap #wonton article.face6 .inner > div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap #wonton article.face6 .inner > div i {
+  width: 20%;
+  height: 100%;
+  float: left;
+  border-right: 1px dotted #ddd;
+  margin-right: 20px;
+  font-size: 50px;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 6px;
+  transition: 0.3s;
+}
+.wrap #wonton article.face6 .inner > div .con {
+  width: 75%;
+  height: 100%;
+  padding-left: 40px;
+  box-sizing: border-box;
+  float: right;
+}
+.wrap #wonton article.face6 .inner > div h2 {
+  font-size: 20px;
+  transition: 0.3s;
+}
+.wrap #wonton article.face6 .inner > div p {
+  font-size: 10px;
+  margin-top: 10px;
+  letter-spacing: 0px;
+  font-family: "Helvetica";
+}
+.wrap #wonton article.face6 .inner > div:hover h2, .wrap #wonton article.face6 .inner > div:hover i {
+  transform: scale(1.2);
+  text-shadow: 0px 0px 10px aliceblue;
+  transform-origin: left center;
+}
+.wrap #wonton article.face7 {
+  transform: rotateY(270deg) translateZ(-764px);
+}
+.wrap #wonton article.face7 .inner div > div {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted olive;
+  box-sizing: border-box;
+  position: relative;
+}
+.wrap #wonton article.face7 .inner div > div video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrap #wonton article.face7 .inner div > div h2 {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  font-size: 40px;
+  text-align: left;
+  text-shadow: 0px 0px 10px #ddd;
+}
+.wrap #wonton article.face7 .inner div > div img:nth-of-type(1) {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+.wrap #wonton article.face7 .inner div > div img:nth-of-type(2) {
+  position: absolute;
+  bottom: 0pxx;
+  right: -18px;
+  width: 90%;
+}
+.wrap #wonton article.face8 {
+  transform: rotateY(315deg) translateZ(-764px);
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(1) {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(1) i {
+  font-size: 250px;
+  position: absolute;
+  bottom: 60px;
+  left: 50px;
+  transition: 0.3s;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(1) span {
+  font-weight: bold;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  font-size: 100px;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(1) em {
+  font: bold normal 30px/1 "Arial";
+  position: absolute;
+  right: -20px;
+  top: 20px;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(2), .wrap #wonton article.face8 .inner > div:nth-of-type(3) {
+  width: 290px;
+  height: 300px;
+  margin-right: 20px;
+  float: left;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(2) h3, .wrap #wonton article.face8 .inner > div:nth-of-type(3) h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font: bold 20px/1 "Helvetica";
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(2) p, .wrap #wonton article.face8 .inner > div:nth-of-type(3) p {
+  font: 16px/1 "Helvetica";
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(2) i, .wrap #wonton article.face8 .inner > div:nth-of-type(3) i {
+  font-size: 100px;
+  transition: 0.3s;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(2) span, .wrap #wonton article.face8 .inner > div:nth-of-type(3) span {
+  font-size: 20px;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(2) strong, .wrap #wonton article.face8 .inner > div:nth-of-type(3) strong {
+  font: bold normal 10px/1 "Arial";
+  position: absolute;
+  left: 70px;
+  bottom: 60px;
+}
+.wrap #wonton article.face8 .inner > div:nth-of-type(3) {
+  margin-right: 0px;
+}
+.wrap #wonton article.face8 .inner > div:hover i {
+  text-shadow: 0px 0px 10px aliceblue;
+}
+
+@keyframes wonton {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/*# sourceMappingURL=panorama.css.map */

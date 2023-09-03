@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 
-ul, ol {
+ul, ol, li {
     list-style: none;
 }
 
-body{
-    background: olive;
-}
 
 a{
     text-decoration: none;
+    outline: 0;
+}
+
+img{
+    border: 0;
 }

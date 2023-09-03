@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/bto3byu.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+/*# sourceMappingURL=flexvid.css.map */
